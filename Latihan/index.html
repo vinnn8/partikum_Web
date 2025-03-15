@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #98e5e5;
+            text-shadow: 2px 2px 4px rgba(0, 6, 8, 0.5);
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .contact-section {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact-section a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .contact-icons a {
+            margin: 10px;
+            font-size: 24px;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+        .contact-icons a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GBS</a>
+            <a class="navbar-brand" href="#"><i class="bi bi-house-door"></i> Galactic Book Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Category</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero text-center">
+        <h1>Welcome to our website!</h1>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Daftar Buku</h2>
+
+        <h4>Kategori Buku</h4>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">Buku Komik</li>
+            <li class="list-group-item">Buku Novel</li>
+            <li class="list-group-item">Buku Teknologi</li>
+        </ul>
+
+        <div class="card-container">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Buku Komik</h5>
+                    <p class="card-text">Temukan berbagai komik menarik dari berbagai genre.</p>
+                    <a href="komik.html" class="btn btn-primary">Lihat Buku Komik</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Buku Novel</h5>
+                    <p class="card-text">Jelajahi novel terbaik dengan cerita yang menginspirasi.</p>
+                    <a href="novel.html" class="btn btn-primary">Lihat Buku Novel</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Buku Teknologi</h5>
+                    <p class="card-text">Pelajari lebih dalam tentang teknologi terbaru.</p>
+                    <a href="teknologi.html" class="btn btn-primary">Lihat Buku Teknologi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contact-section">
+        <h2>Hubungi Kami</h2>
+        <p>Ingin tahu lebih lanjut? Hubungi kami melalui:</p>
+        <div class="contact-icons">
+            <a href="https:wa.me/+6281585893371" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+            <a href="https://www.instagram.com/vinuzuma/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    <footer class="text-center bg-dark text-white py-3">
+        <p>&copy; 2025 Galactic Bookstore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
